@@ -1,10 +1,9 @@
 $(document).ready(function(){
  $('#toggle-tab').click(function(){
-  $('.tablet-menu').toggle(200);
+  $('.tablet-menu').toggle(250);
  });
- $('.header').hide();
-  $('.cross-box__item2').click(function(){
-    $('.header').toggle('slow');
+ const toggler = $('.cross-box__item2');
+  toggler.click(function(){
+    $('.menu').toggleClass('menu--none');
   });
-
 });
