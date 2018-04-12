@@ -6,5 +6,5 @@ $(document).ready(function(){
   toggler.click(function(){
     $('.menu').toggleClass('menu--none');
   });
-
+ const toggler2 = $('.')
 });
