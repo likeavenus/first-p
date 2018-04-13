@@ -28,6 +28,6 @@ const togglerIndex = $('.mobile-promo');
      $(this).toggleClass('cross-box__item2');
   });
    $('.cross-box__item2--white-burger').click(function(){
-
+    $('.menu').css({'display' : 'flex'});
    });
 });
