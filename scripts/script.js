@@ -18,9 +18,16 @@ $(document).ready(function(){
   //Tablet toggler
  const togglerTwo = $('.b-tablet-menu');
   $('.b-header-tab__img').click(function(){
-    togglerTwo.toggle('slow')
+    togglerTwo.toggle('slow');
     togglerTwo.toggleClass('b-tablet-menu--none');
   });
   //index toggler mobile
+const togglerIndex = $('.mobile-promo');
+  $('.cross-box__item2--white-burger').click(function(){
+    togglerIndex.toggle('slow');
+     $(this).toggleClass('cross-box__item2');
+  });
+   $('.cross-box__item2--white-burger').click(function(){
 
-})
+   });
+});
