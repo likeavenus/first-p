@@ -25,10 +25,13 @@ $(document).ready(function(){
 const togglerIndex = $('.mobile-promo');
   $('.cross-box__item2--white-burger').click(function(){
     togglerIndex.toggle('slow');
-     $(this).toggleClass('cross-box__item2');
   });
    $('.cross-box__item2--white-burger').click(function(){
     $('.menu').css({'display' : 'flex'});
-    $(this).toggleClass
+    $('.menu').prepend('<div class="cross-box"><a class="cross-box__link" href="https://likeavenus.github.io/first-p/"><span class="cross-box__item1">ice age</span></a><a href="#" class="cross-box__item2"></a></div>');
+     $('.cross-box__item2').css({'margin-right' : '15px'});
+       $('.cross-box__item2').click(function(){
+       $('.mobile-promo').toggle('fast');
    });
+  });
 });
