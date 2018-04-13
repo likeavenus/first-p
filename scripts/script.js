@@ -5,21 +5,22 @@ $(document).ready(function(){
   toggleOne.toggleClass('tablet-menu--none');
  });
 
+//mobile toggler
  const toggler = $('.menu');
   $('.cross-box__item2--burger').click(function(){
     toggler.toggle('slow');
     $('.menu').toggleClass('menu--none');
   });
+  $('.cross-box__item2--burger').click(function(){
+    $(this).toggleClass('cross-box__item2');
+  });
 
+  //Tablet toggler
  const togglerTwo = $('.b-tablet-menu');
   $('.b-header-tab__img').click(function(){
     togglerTwo.toggle('slow')
     togglerTwo.toggleClass('b-tablet-menu--none');
   });
-
-  $('.cross-box__item2--burger').click(function(){
-    $(this).toggleClass('cross-box__item2');
-  });
-
+  //index toggler mobile
 
 })
