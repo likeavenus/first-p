@@ -2,7 +2,6 @@ $(document).ready(function(){
   const toggleOne = $('.menu-tab')
  $('#toggle-tab').click(function(){
   toggleOne.toggleClass('menu-tab--show');
-   toggleOne.toggle('slow');
   $('.promo').toggle('slow');
   $(this).toggleClass('cross-box__item2');
   $('.header-tab__link--white').toggleClass('header-tab__link');
@@ -10,8 +9,6 @@ $(document).ready(function(){
 $('.b-header-tab__img').click(function(){
   toggleOne.toggle('slow');
 });
-
-
 
 //mobile toggler
  const toggler = $('.menu');
