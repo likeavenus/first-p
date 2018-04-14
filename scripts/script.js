@@ -32,6 +32,9 @@ const togglerIndex = $('.mobile-promo');
   $('.mobile-promo').toggle('slow');
   $('.menu').toggle('slow');
  });
+$('.gallery__photo').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+})
 });
-    // $('.menu').prepend('<div class="cross-box"><a class="cross-box__link" href="https://likeavenus.github.io/first-p/"><span class="cross-box__item1">ice age</span></a><a href="#" class="cross-box__item2"></a></div>');
-    // $('.cross-box__item2').css({'margin-right' : '15px'});
