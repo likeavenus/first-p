@@ -2,12 +2,13 @@ $(document).ready(function(){
   const toggleOne = $('.menu-tab')
  $('#toggle-tab').click(function(){
   toggleOne.toggleClass('menu-tab--show');
-
   $('.promo').toggle('slow');
   $(this).toggleClass('cross-box__item2');
   $('.header-tab__link--white').toggleClass('header-tab__link');
- // toggleOne.toggleClass('menu-tab--show');
  });
+
+
+
 
 //mobile toggler
  const toggler = $('.menu');
