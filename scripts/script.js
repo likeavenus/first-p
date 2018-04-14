@@ -2,11 +2,14 @@ $(document).ready(function(){
   const toggleOne = $('.menu-tab')
  $('#toggle-tab').click(function(){
   toggleOne.toggleClass('menu-tab--show');
+   toggleOne.toggle('slow');
   $('.promo').toggle('slow');
   $(this).toggleClass('cross-box__item2');
   $('.header-tab__link--white').toggleClass('header-tab__link');
  });
-
+$('.b-header-tab__img').click(function(){
+  toggleOne.toggle('slow');
+});
 
 
 
@@ -20,12 +23,6 @@ $(document).ready(function(){
     $(this).toggleClass('cross-box__item2');
   });
 
-  //Tablet toggler
- // const togglerTwo = $('.b-tablet-menu');
- //  $('.b-header-tab__img').click(function(){
- //    togglerTwo.toggle('slow');
- //    togglerTwo.toggleClass('b-tablet-menu--none');
- //  });
   //index toggler mobile
 const togglerIndex = $('.mobile-promo');
   $('.cross-box__item2--white-burger').click(function(){
