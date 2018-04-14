@@ -33,8 +33,26 @@ const togglerIndex = $('.mobile-promo');
   $('.menu').toggle('slow');
  });
 $('.gallery__photo').slick({
+   slidesToShow: 6,
+  // slidesToScroll: 6,
   infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
-})
+  dots: true,
+  arrows: true,
+  responsive: [
+{
+  breakpoint: 768,
+  settings: {
+    slidesToShow: 3,
+    slidesToScroll: 3,
+ }
+},
+{
+breakpoint: 400,
+  settings: {
+  slidesToShow: 1,
+  slidesToScroll: 1
+   }
+}
+]
+ });
 });
