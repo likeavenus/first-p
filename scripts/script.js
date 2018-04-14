@@ -1,8 +1,12 @@
 $(document).ready(function(){
-  const toggleOne = $('.tablet-menu')
+  const toggleOne = $('.menu-tab')
  $('#toggle-tab').click(function(){
-  toggleOne.toggle('slow');
-  toggleOne.toggleClass('tablet-menu--none');
+  toggleOne.toggleClass('menu-tab--show');
+
+  $('.promo').toggle('slow');
+  $(this).toggleClass('cross-box__item2');
+  $('.header-tab__link--white').toggleClass('header-tab__link');
+ // toggleOne.toggleClass('menu-tab--show');
  });
 
 //mobile toggler
@@ -16,11 +20,11 @@ $(document).ready(function(){
   });
 
   //Tablet toggler
- const togglerTwo = $('.b-tablet-menu');
-  $('.b-header-tab__img').click(function(){
-    togglerTwo.toggle('slow');
-    togglerTwo.toggleClass('b-tablet-menu--none');
-  });
+ // const togglerTwo = $('.b-tablet-menu');
+ //  $('.b-header-tab__img').click(function(){
+ //    togglerTwo.toggle('slow');
+ //    togglerTwo.toggleClass('b-tablet-menu--none');
+ //  });
   //index toggler mobile
 const togglerIndex = $('.mobile-promo');
   $('.cross-box__item2--white-burger').click(function(){
@@ -31,7 +35,7 @@ const togglerIndex = $('.mobile-promo');
   });
  $('.cross-box2__item').click(function(){
   $('.mobile-promo').toggle('slow');
-  $('.menu').css({'display' : 'none'});
+  $('.menu').toggle('slow');
  });
 });
     // $('.menu').prepend('<div class="cross-box"><a class="cross-box__link" href="https://likeavenus.github.io/first-p/"><span class="cross-box__item1">ice age</span></a><a href="#" class="cross-box__item2"></a></div>');
