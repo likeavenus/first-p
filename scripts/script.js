@@ -66,4 +66,27 @@ $('.tutorial-slider').slick({
   appendArrows: $('.right-btn'),
   nextArrow: '<a href="" class="right-btn"><img src="img/next.jpg.png" alt=""></a>'
  });
+$('.instructors__list').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  responsive: [
+{
+  breakpoint: 1000,
+  settings: {
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  }
+},
+{
+  breakpoint: 402,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    centerMode: true
+  }
+}
+]
+});
 });
