@@ -89,4 +89,24 @@ $('.instructors__list').slick({
 }
 ]
 });
+$('.other-trainers__list').slick({
+  slidesToShow: 5,
+  responsive: [
+{
+  breakpoint: 1000,
+  settings: {
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  }
+},
+{
+  breakpoint: 401,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true
+  }
+}
+]
+ });
 });
