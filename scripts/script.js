@@ -33,17 +33,17 @@ const togglerIndex = $('.mobile-promo');
   $('.menu').toggle('slow');
  });
 $('.gallery__photo').slick({
-   slidesToShow: 6,
-  // slidesToScroll: 6,
+  slidesToShow: 6,
   infinite: true,
-  dots: true,
-  arrows: true,
+  dots: false,
+  arrows: false,
+  autoplay: 400,
   responsive: [
 {
-  breakpoint: 768,
+  breakpoint: 769,
   settings: {
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
  }
 },
 {
@@ -54,5 +54,16 @@ breakpoint: 400,
    }
 }
 ]
+ });
+$('.tutorial-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: true,
+  dotsClass: "list-button",
+  appendArrows: $('.left-btn'),
+  prevArrow:'<a href="" class="left-btn"><img class="" src="img/Prev.jpg.png" alt=""></a>',
+  appendArrows: $('.right-btn'),
+  nextArrow: '<a href="" class="right-btn"><img src="img/next.jpg.png" alt=""></a>'
  });
 });
