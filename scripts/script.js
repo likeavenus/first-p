@@ -64,17 +64,27 @@ $('.tutorial-slider').slick({
   appendArrows: $('.left-btn'),
   prevArrow:'<a href="" class="left-btn"><img class="" src="img/Prev.jpg.png" alt=""></a>',
   appendArrows: $('.right-btn'),
-  nextArrow: '<a href="" class="right-btn"><img src="img/next.jpg.png" alt=""></a>'
+  nextArrow: '<a href="" class="right-btn"><img src="img/next.jpg.png" alt=""></a>',
+  responsive: [
+{
+  breakpoint: 400,
+    settings: {
+      dots: false
+    }
+}
+  ]
  });
 $('.instructors__list').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
+  dots: true,
   responsive: [
 {
   breakpoint: 1000,
   settings: {
     slidesToShow: 3,
     slidesToScroll: 3,
+    dots: true,
   }
 },
 {
@@ -84,7 +94,8 @@ $('.instructors__list').slick({
     slidesToScroll: 1,
     dots: false,
     arrows: false,
-    centerMode: true
+    centerMode: true,
+    centerPadding: '60px',
   }
 }
 ]
@@ -109,4 +120,10 @@ $('.other-trainers__list').slick({
 }
 ]
  });
+$('.adapt-slider__coach').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  dotsClass: "list-button",
+});
 });
