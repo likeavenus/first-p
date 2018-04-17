@@ -126,4 +126,5 @@ $('.adapt-slider__coach').slick({
   dots: true,
   dotsClass: "list-button",
 });
+
 });

@@ -10,6 +10,7 @@
     <title>Ice ace Главная</title>
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/ui.totop.css" media="screen,projection">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="http://www.meribel-ski-rental.com/medias/cl_15/images/favicon.ico" type="image/x-icon">
@@ -380,6 +381,23 @@
     </div>
   <script src="scripts/jquery-3.3.1.min.js"></script>
   <script src="scripts/slick.min.js"></script>
+  <script src="scripts/easing.js"></script>
+  <script src="scripts/jquery.ui.totop.js"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+/*
+var defaults = {
+containerID: 'toTop', // fading element id
+containerHoverID: 'toTopHover', // fading element hover id
+scrollSpeed: 1200,
+easingType: 'linear'
+};
+*/
+
+$().UItoTop({ easingType: 'easeOutQuart' });
+
+});
+</script>
   <script src='scripts/script.js'></script>
   </body>
 </html>
