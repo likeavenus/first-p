@@ -60,11 +60,6 @@ $('.tutorial-slider').slick({
   slidesToScroll: 1,
   dots: true,
   arrows: true,
-  dotsClass: "list-button",
-  appendArrows: $('.left-btn'),
-  prevArrow:'<a href="" class="left-btn"><img class="" src="img/Prev.jpg.png" alt=""></a>',
-  appendArrows: $('.right-btn'),
-  nextArrow: '<a href="" class="right-btn"><img src="img/next.jpg.png" alt=""></a>',
   responsive: [
 {
   breakpoint: 400,
