@@ -119,7 +119,6 @@ $('.adapt-slider__coach').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
-  dotsClass: "list-button",
 });
 
 });
